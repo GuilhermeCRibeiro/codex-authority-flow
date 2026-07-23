@@ -1,3 +1,0 @@
-[console_scripts]
-authority-flow = codex_authority_flow.cli:main
-codex-authority-flow = codex_authority_flow.cli:main

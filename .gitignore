@@ -1,5 +1,9 @@
 .cache/
 sources/
+build/
+dist/
+*.egg-info/
+__pycache__/
 *.zip
 .DS_Store
 Thumbs.db
