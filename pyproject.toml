@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-authority-flow"
+version = "1.0.0"
+description = "Instalador e skill de autoridade para orquestração automática de workflows no OpenAI Codex."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "GuilhermeCRibeiro" }]
+keywords = ["codex", "agents", "skills", "workflow", "automation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/GuilhermeCRibeiro/codex-authority-flow"
+Repository = "https://github.com/GuilhermeCRibeiro/codex-authority-flow"
+Issues = "https://github.com/GuilhermeCRibeiro/codex-authority-flow/issues"
+
+[project.scripts]
+codex-authority-flow = "codex_authority_flow.cli:main"
+authority-flow = "codex_authority_flow.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-data]
+codex_authority_flow = ["assets/**/*"]

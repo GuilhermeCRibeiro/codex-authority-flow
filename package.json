@@ -1,0 +1,44 @@
+{
+  "name": "codex-authority-flow",
+  "version": "1.0.0",
+  "description": "Instalador e skill de autoridade para orquestração automática de workflows no OpenAI Codex.",
+  "type": "module",
+  "bin": {
+    "codex-authority-flow": "./cli/codex-authority-flow.mjs",
+    "authority-flow": "./cli/codex-authority-flow.mjs"
+  },
+  "files": [
+    "cli",
+    "scripts",
+    "skill",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "install:flow": "node ./cli/codex-authority-flow.mjs install",
+    "doctor": "node ./cli/codex-authority-flow.mjs doctor",
+    "test": "node ./cli/codex-authority-flow.mjs doctor --local"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "codex",
+    "openai-codex",
+    "agent-skills",
+    "multi-agent",
+    "workflow",
+    "automation"
+  ],
+  "author": "GuilhermeCRibeiro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeCRibeiro/codex-authority-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GuilhermeCRibeiro/codex-authority-flow/issues"
+  },
+  "homepage": "https://github.com/GuilhermeCRibeiro/codex-authority-flow#readme"
+}

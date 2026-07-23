@@ -1,0 +1,3 @@
+recursive-include python/codex_authority_flow/assets *
+include README.md
+include LICENSE
